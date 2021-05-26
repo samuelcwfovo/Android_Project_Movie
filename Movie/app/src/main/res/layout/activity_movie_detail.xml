@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SCROLLER_ID"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/transparent"
+        app:navigationIcon="@drawable/baseline_arrow_back_ios_24"
+        android:elevation="15dp"
+        android:minHeight="70dp"
+        android:layout_marginLeft="10dp"
+        app:theme="@style/ToolbarColoredBackArrow"
+
+        />
+
+    <ImageView
+        android:id="@+id/backGroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:scaleType="center" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:src="@drawable/background_toolbar_translucent"
+        />
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="600dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="10dp"
+        android:rotation="0"
+        android:src="@drawable/shape_triangle" />
+
+    <io.github.armcha.coloredshadow.ShadowImageView
+        android:id="@+id/detailPoster"
+        android:layout_width="180dp"
+        android:layout_height="240dp"
+        android:elevation="15dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitXY"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-95dp"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/detailPoster"
+        android:padding="50dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_toEndOf="@id/detailPoster"
+        android:contentDescription="play"
+        android:elevation="50dp"
+        android:src="@drawable/play"
+        app:backgroundTint="#50D5C2"
+        app:tint="#FFFFFF"
+        app:fabCustomSize="80dp"
+        android:clickable="true"
+
+        />
+
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailPoster"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="120dp"
+        android:fontFamily="@font/source_han_sans_tw_bold"
+        android:text="Re:從零開始的異世界"
+        android:includeFontPadding = "true"
+        android:textColor="#7D7D7F"
+        android:textSize="22dp"
+        />
+
+    <TextView
+        android:id="@+id/detailTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/detailPoster"
+        android:layout_toEndOf="@+id/detailTitle"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="1dp"
+        android:textSize="12dp"
+        android:background="@drawable/movie_time_boarder"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="105 min"
+        android:textColor="#eeeeee"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/detailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/source_han_sans_tw_bold"
+        android:text="戰爭,劇情"
+        android:textColor="#c8c8c8"
+        android:textSize="17dp" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/detailRate"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/detailLabel"
+        android:progressTint="#fca95f"
+        android:secondaryProgressTint="#00000000"
+        android:stepSize=".1"
+        android:max="10"
+        android:rating="2"
+        />
+
+    <TextView
+        android:id="@+id/detailRateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@+id/detailRate"
+        android:layout_below="@+id/detailLabel"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="3.7"
+        android:textColor="#fca95f"
+        android:textSize="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/detailRateText"
+        android:layout_below="@+id/detailLabel"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="/10"
+        android:textColor="#D5D5D5"
+        android:textSize="20dp"
+        />
+
+    <com.abdulhakeem.seemoretextview.SeeMoreTextView
+        android:id="@+id/detailDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailRate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/source_han_sans_tw_regular"
+        android:text="距離太一與亞古獸相遇、前往數碼世界冒險後超過十年，世界已漸漸知道「被選中的孩子們」的存在，在現實世界中看見數碼精靈也不是稀奇事情。而太一也成為了大學生，與大和等人各自踏上自己的人生路。就在此時，專門研究數碼精靈的學者梅諾亞和井村，就神秘數碼精靈「艾奧斯獸」向太一等人求助。為了解決事件，被選中的孩子們再次集結，卻在對戰期間從梅諾亞口中得知一個驚人事實——在被選中的孩子變成大人之時，其拍檔數碼精靈將會消失。 不戰鬥便無法拯救同伴，然而強行戰鬥只會提早與拍檔離別。 面對無法改變的宿命，太一與亞古獸一同決定出的答案會是？資料來源: 香港電影 (數碼暴龍 Last Evolution 絆)"
+        android:textSize="17dp"
+        android:textColor="#bbbbbb"
+        android:includeFontPadding = "true"
+
+        />
+
+    <com.lzy.ninegrid.NineGridView
+        android:id="@+id/nineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailDetail"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="40dp"
+        app:ngv_gridSpacing="5dp"
+        app:ngv_maxSize="3"
+        app:ngv_mode="grid"
+        app:ngv_singleImageRatio="1.3"
+        app:ngv_singleImageSize="250dp"/>
+
+</RelativeLayout>
+</ScrollView>

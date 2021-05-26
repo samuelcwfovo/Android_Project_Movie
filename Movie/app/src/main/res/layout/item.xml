@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+        <io.github.armcha.coloredshadow.ShadowImageView
+            android:id="@+id/itemImage"
+            android:layout_width="180dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="0dp"
+            android:elevation="15dp"
+        />
+<!--        <TextView-->
+<!--            android:id="@+id/itemRate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/itemImage"-->
+<!--            android:layout_marginLeft="130dp"-->
+<!--            android:layout_marginTop="-70dp"-->
+<!--            android:background="@drawable/rounded_textview"-->
+<!--            android:fontFamily="@font/open_sans_bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="7.5"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:elevation="25dp"-->
+
+<!--            android:textSize="25dp" />-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="20dp"
+            >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+<!--                        <io.github.armcha.coloredshadow.ShadowImageView-->
+<!--                            android:id="@+id/itemImage"-->
+<!--                            android:layout_width="180dp"-->
+<!--                            android:layout_height="250dp"-->
+<!--                            android:layout_marginTop="-50dp"-->
+<!--                            android:layout_marginLeft="0dp"-->
+<!--                            android:elevation="10dp"-->
+<!--                            />-->
+                        <TextView
+                            android:id="@+id/itemTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="170dp"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/source_han_sans_tw_bold"
+                            android:text="致富者聯盟致富者聯盟致富者聯盟"
+                            android:includeFontPadding = "true"
+                            android:textColor="#7D7D7F"
+                            android:textSize="16dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/itemLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/itemTitle"
+                            android:layout_marginLeft="170dp"
+                            android:layout_marginTop="-20dp"
+                            android:fontFamily="@font/source_han_sans_tw_normal"
+                            android:text="戰爭,劇情"
+                            android:textColor="#c8c8c8"
+                            android:textSize="15dp" />
+
+
+
+                        <TextView
+                            android:id="@+id/itemTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="170dp"
+                            android:layout_marginTop="-5dp"
+                            android:layout_below="@+id/itemLabel"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="2dp"
+                            android:textSize="12dp"
+                            android:background="@drawable/movie_time_boarder"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:text="105 min"
+                            android:textColor="#eeeeee"
+                            />
+
+
+                        <androidx.appcompat.widget.AppCompatRatingBar
+                            android:id="@+id/itemRate"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="170dp"
+                            android:layout_below="@+id/itemTime"
+                            android:progressTint="#50D5C2"
+                            android:secondaryProgressTint="#00000000"
+                            android:stepSize=".1"
+                            android:max="10"
+                            android:rating="8.2"
+                            />
+
+                        <TextView
+                            android:id="@+id/itemRateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toEndOf="@+id/itemRate"
+                            android:layout_below="@+id/itemTime"
+                            android:fontFamily="@font/open_sans_extrabold"
+                            android:text="0.0"
+                            android:textColor="#50D5C2"
+                            android:textSize="20dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/itemRateFull"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toEndOf="@+id/itemRateText"
+                            android:layout_below="@+id/itemTime"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:text="/10"
+                            android:textColor="#D5D5D5"
+                            android:textSize="14dp"
+                            />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/itemTime"
+                        android:layout_toEndOf="@+id/itemRateFull"
+                        android:src="@drawable/imdb1"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginRight="-3dp"
+                        />
+
+                        <TextView
+                            android:id="@+id/itemDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/itemRate"
+                            android:layout_marginLeft="170dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/source_han_sans_tw_regular"
+                            android:text="在18世紀的英國，漂亮，聰穎，富有的愛瑪(安雅泰萊采兒 飾)在這個無聊平庸的小鎮裡靜不下來。因為不急著出嫁結婚，資料來源: 香港電影 (EMMA：上流貴族)"
+                            android:lines="4"
+                            android:ellipsize="end"
+                            android:textSize="14dp"
+                            android:textColor="#bbbbbb"
+                            android:includeFontPadding = "false"
+
+                            />
+
+
+
+                </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>
