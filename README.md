@@ -4,3 +4,12 @@
 
 ## Youtube demo link
 -https://youtu.be/jLhqzLQw_GU
+
+## Screens Shot
+<p float="left">
+ <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout0.jpg" alt="main" width="100"/>
+ <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout1.jpg" alt="detail" width="100"/>
+</p>
+
+## layout flow
+ <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout2.jpg" alt="mobile" width="100"/>
