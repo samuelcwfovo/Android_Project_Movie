@@ -12,4 +12,4 @@
 </p>
 
 ## layout flow
- <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout2.jpg" alt="mobile" width="400"/>
+ <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout2.jpg" alt="mobile" width="600"/>
