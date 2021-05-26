@@ -7,9 +7,9 @@
 
 ## Screens Shot
 <p float="left">
- <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout0.jpg" alt="main" width="200"/>
- <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout1.jpg" alt="detail" width="200"/>
+ <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout0.jpg" alt="main" width="300"/>
+ <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout1.jpg" alt="detail" width="300"/>
 </p>
 
 ## layout flow
- <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout2.jpg" alt="mobile" width="600"/>
+ <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout2.jpg" alt="mobile" width="800"/>
