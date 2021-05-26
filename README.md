@@ -11,5 +11,9 @@
  <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout1.jpg" alt="detail" width="300"/>
 </p>
 
-## layout flow
+## Layout flow
  <img src="https://github.com/samuelcwfovo/Android_Project_Movie/blob/main/img/layout2.jpg" alt="mobile" width="800"/>
+
+## Function
+- Fetch movie data from hkmovie6.com and fetch their IMDB rate from imdb api
+- Distplay movie detail nicely to user
